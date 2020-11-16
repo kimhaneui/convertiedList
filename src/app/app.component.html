@@ -1,0 +1,22 @@
+<div *ngFor="let item of list" class="round-box reservation-question-item" (click)="detailView()">
+  <div class="reservation-title">
+    <span class="label sm type1">문의접수</span>
+  </div>
+  <div class="question-summary">
+    <h2 class="product-title">{{item.questionTitle}}</h2>
+    <ul>
+      <li>
+        <span>출발일</span>
+        <span>{{item.travelFromDate}}</span>
+      </li>
+      <li>
+        <span>상담분류</span>
+        <span>{{item.consultingTypeCode}}</span>
+      </li>
+      <li>
+        <span>상담내용</span>
+        <span>{{item.questionDetail}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
